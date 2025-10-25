@@ -1,0 +1,268 @@
+/* *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: url(bg\ image.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  
+}
+.hero-section{
+    height: 700px;
+    width: 600px;
+    background-color:black;
+    margin: 20px auto;
+    opacity: 0.8;
+    border-radius: 20px;
+   
+}
+img{
+    height: 30%;
+    width: 30%;
+    border: 5px solid white;
+    border-radius: 50%;
+    margin: 20px 35%;
+}
+h1{
+    text-align: center;
+    font-size: 40px;
+    color: white;
+    font-family: sans-serif;
+    font-weight: 600;
+}
+.p1{
+    text-align: center;
+    font-size: 20px;
+    color:rgb(8, 174, 245) ;
+    padding: 10px;
+    font-weight: bold;
+}
+.p2{
+    padding: 15px;
+    text-align: center;
+    font-size: 20px;
+    color: white;
+}
+
+.second-card{
+    display: flex;
+    justify-content: center;
+    background-color: rgb(203, 166, 54) ;
+    text-align: center;
+    margin: 20px 90px;
+     padding: 20px;
+    border-radius: 20px;
+    gap: 20px;
+
+    p{
+        font-size: 15px;
+        color:black;
+        font-weight: bold;
+    }
+    h1{
+        font-size: 25px;
+    }
+
+}
+
+.btn{
+
+    display: flex;
+    justify-content: center;
+    animation: zoom-in-zoom-out 2s ease-in-out infinite;
+    button{
+        padding: 20px 50px;
+        color: rgb(8, 174, 245)  ;
+        font-weight: bold;
+        border: 2px solid rgb(8, 174, 245) ;
+        font-size: 20px;
+        border-radius: 30px;
+        color: white;
+        background-color: rgb(8, 174, 245);
+        box-shadow: 0 10px 10px rgba(241, 238, 238, 0.5);
+    }
+}
+
+.text1{
+    margin: 10px;
+    color: white;
+    text-align: center;
+    font-size: 25px;
+}
+
+@keyframes zoom-in-zoom-out {
+    
+    0% {
+        transform: scale(1); 
+    }
+    
+    50% {
+        transform: scale(1.2); 
+    }
+    100% {
+        transform: scale(1);
+    }
+} */
+
+
+
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(bg\ image.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    /* Added to keep background stable on scroll */
+    background-attachment: fixed; 
+}
+
+/* --- Responsive Changes in Hero Section --- */
+.hero-section {
+    /* Changed fixed height to min-height for flexible content */
+    min-height: 60vh; 
+    /* Changed fixed width to max-width to allow shrinking on small screens */
+    max-width: 600px; 
+    width: 90%; /* Ensures it's 90% of screen width, but no more than 600px */
+    background-color: black;
+    margin: 50px auto;
+    opacity: 0.8;
+    border-radius: 20px;
+    /* Added padding for inner spacing on smaller screens */
+    padding: 20px 0; 
+}
+
+/* --- Image Styling --- */
+img {
+    /* Changed percentage to fixed max-width for better control */
+    max-width: 150px; 
+    width: 30%;
+    height: auto; /* To maintain aspect ratio */
+    border: 5px solid white;
+    border-radius: 50%;
+    margin: 20px auto; /* Centered with 'auto' margins */
+    display: block; /* Important for auto margin centering */
+}
+
+/* --- Typography --- */
+h1 {
+    text-align: center;
+    /* Scaled down font size for better mobile display */
+    font-size: 2.5rem; 
+    color: white;
+    font-family: sans-serif;
+    font-weight: 600;
+}
+
+.p1 {
+    text-align: center;
+    font-size: 20px;
+    color: rgb(8, 174, 245);
+    padding: 10px;
+    font-weight: bold;
+}
+
+.p2 {
+    padding: 15px;
+    text-align: center;
+    font-size: 18px; /* Slightly reduced font size */
+    color: white;
+}
+
+/* --- Stats Card --- */
+.second-card {
+    display: flex;
+    justify-content: space-around; /* Changed to space-around for even spacing */
+    background-color: rgb(203, 166, 54);
+    text-align: center;
+    /* Changed fixed margin to relative margin/padding */
+    margin: 20px 5%; 
+    padding: 20px 10px;
+    border-radius: 20px;
+    gap: 10px; /* Reduced gap */
+
+    & p {
+        font-size: 14px; /* Reduced font size */
+        color: black;
+        font-weight: bold;
+    }
+
+    & h1 {
+        font-size: 1.5rem; /* Reduced font size */
+    }
+}
+
+/* --- Button and Animation --- */
+.btn {
+    display: flex;
+    justify-content: center;
+    animation: zoom-in-zoom-out 2s ease-in-out infinite;
+    margin-top: 20px;
+    
+    & button {
+        /* Scaled down padding for better mobile fit */
+        padding: 15px 30px; 
+        color: white;
+        font-weight: bold;
+        border: 2px solid rgb(8, 174, 245);
+        /* Scaled down font size */
+        font-size: 18px; 
+        border-radius: 30px;
+        background-color: rgb(8, 174, 245);
+        box-shadow: 0 10px 10px rgba(241, 238, 238, 0.5);
+        /* Ensures button doesn't overflow on tiny screens */
+        max-width: 90%; 
+    }
+}
+
+.text1 {
+    margin: 10px;
+    color: white;
+    text-align: center;
+    font-size: 22px; /* Slightly reduced font size */
+    padding-bottom: 10px; /* Added padding to bottom */
+}
+
+@keyframes zoom-in-zoom-out {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1); /* Reduced scale for subtler effect */
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+/* --- Media Query for very small screens (e.g., old smartphones) --- */
+@media (max-width: 450px) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    .p2 {
+        font-size: 16px;
+        padding: 10px;
+    }
+
+    .second-card {
+        padding: 15px 5px;
+        gap: 5px;
+    }
+    
+    .btn button {
+        padding: 12px 20px;
+        font-size: 16px;
+    }
+}
