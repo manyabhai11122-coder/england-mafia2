@@ -20,7 +20,7 @@ body {
     min-height: 60vh; 
     /* Changed fixed width to max-width to allow shrinking on small screens */
     max-width: 630px; 
-    width: 90%; /* Ensures it's 90% of screen width, but no more than 600px */
+    width: 95%; /* Ensures it's 90% of screen width, but no more than 600px */
     background-color: black;
     margin: 50px auto;
     opacity: 0.8;
@@ -157,3 +157,4 @@ h1 {
         font-size: 16px;
     }
 }
+
