@@ -83,6 +83,9 @@ h1{
         color: white;
         background-color: rgb(8, 174, 245);
         box-shadow: 0 10px 10px rgba(241, 238, 238, 0.5);
+
+            a{
+                text-decoration:none;
     }
 }
 
@@ -267,4 +270,5 @@ h1 {
     }
 
 }
+
 
