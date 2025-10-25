@@ -225,6 +225,10 @@ h1 {
         box-shadow: 0 10px 10px rgba(241, 238, 238, 0.5);
         /* Ensures button doesn't overflow on tiny screens */
         max-width: 90%; 
+
+        a{
+            text-decoration:none;
+            color:white;
     }
 }
 
@@ -270,5 +274,6 @@ h1 {
     }
 
 }
+
 
 
