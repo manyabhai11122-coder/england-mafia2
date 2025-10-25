@@ -17,7 +17,7 @@ body {
 /* --- Responsive Changes in Hero Section --- */
 .hero-section {
     /* Changed fixed height to min-height for flexible content */
-    min-height: 80vh; 
+    min-height: 60vh; 
     /* Changed fixed width to max-width to allow shrinking on small screens */
     max-width: 630px; 
     width: 90%; /* Ensures it's 90% of screen width, but no more than 600px */
@@ -99,7 +99,7 @@ h1 {
     & button {
         /* Scaled down padding for better mobile fit */
         padding: 15px 30px; 
-        color: white;
+        /* color: red; */
         font-weight: bold;
         border: 2px solid rgb(8, 174, 245);
         /* Scaled down font size */
@@ -109,16 +109,16 @@ h1 {
         box-shadow: 0 10px 10px rgba(241, 238, 238, 0.5);
         /* Ensures button doesn't overflow on tiny screens */
         max-width: 90%; 
-
         a{
-            text-decoration:none;
-            color:white;
+          color: white;
+          text-decoration: none;
+        }
     }
 }
 
 .text1 {
     margin: 10px;
-    color: blue;
+    color: white;
     text-align: center;
     font-size: 22px; /* Slightly reduced font size */
     padding-bottom: 10px; /* Added padding to bottom */
@@ -143,7 +143,7 @@ h1 {
     }
 
     .p2 {
-        font-size: 15px;
+        font-size: 16px;
         padding: 10px;
     }
 
@@ -156,10 +156,4 @@ h1 {
         padding: 12px 20px;
         font-size: 16px;
     }
-
 }
-
-
-
-
-
